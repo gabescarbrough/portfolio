@@ -1,0 +1,96 @@
+@import 'color';
+
+$heading-font-stack: 'Montserrat', sans-serif;
+$body-font-stack: 'Raleway', sans-serif;
+$font-size: 16px;
+
+* {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $heading-font-stack;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .67em; }
+
+h1,
+h2,
+h5,
+h6 {
+  color: $blue;
+}
+
+h3, h4 {
+  color: $red;
+}
+
+.intro-name {
+  position: absolute;
+  top: 50px;
+  h1 {
+    color: $white;
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  h2 {
+    color: $white;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0;
+  }
+
+}
+
+p {
+  font-family: $body-font-stack;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.intro-links {
+  a {
+    color: $white;
+    text-decoration: none;
+    border: 2px solid $white;
+    margin-right: 5px;
+    padding: 5px;
+    display: block;
+    float: left;
+    @media(max-width: 330px){
+      font-size: 14px;
+    }
+  }
+
+  a:hover {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.ghost-button {
+    border: 2px solid $red;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+.ghost-button:hover {
+  background-color: $red;
+  color: $white;
+}

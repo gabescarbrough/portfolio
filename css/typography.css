@@ -1,0 +1,109 @@
+* {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .67em;
+}
+
+h1,
+h2,
+h5,
+h6 {
+  color: #302a5f;
+}
+
+h3, h4 {
+  color: #e94344;
+}
+
+.intro-name {
+  position: absolute;
+  top: 50px;
+}
+
+.intro-name h1 {
+  color: #fbfdff;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.intro-name h2 {
+  color: #fbfdff;
+  font-weight: normal;
+  font-size: 32px;
+  margin: 0;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.intro-links a {
+  color: #fbfdff;
+  text-decoration: none;
+  border: 2px solid #fbfdff;
+  margin-right: 5px;
+  padding: 5px;
+  display: block;
+  float: left;
+}
+
+@media (max-width: 330px) {
+  .intro-links a {
+    font-size: 14px;
+  }
+}
+
+.intro-links a:hover {
+  background-color: #fbfdff;
+  color: #302a5f;
+}
+
+a {
+  color: #e94344;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.ghost-button {
+  border: 2px solid #e94344;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.ghost-button:hover {
+  background-color: #e94344;
+  color: #fbfdff;
+}

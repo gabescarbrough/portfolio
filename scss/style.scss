@@ -1,0 +1,84 @@
+@import 'typography';
+@import 'color';
+@import 'neat';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, $red, $blue 40%);
+  background-color: $blue;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+section {
+  @include outer-container;
+  background-color: $white;
+  margin-bottom: 0;
+  padding: 40px;
+}
+
+section:nth-child(odd) {
+  background-color: $grey;
+}
+
+.about-point {
+  @media(min-width: 1000px){
+    @include span-columns(4);
+    padding-right: 20px;
+  }
+}
+
+.intro {
+  background-color: $blue !important;
+  background-image: url("../headshot.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  @media(max-width: 600px){
+    padding: 20px;
+    background-image: none;
+  }
+}
+
+.intro-links {
+  position: absolute;
+  bottom: 50px;
+}
+
+.projects {
+  margin: 0 auto;
+}
+
+.project {
+  background-color: $white;
+  padding: 20px;
+  margin-bottom: 20px;
+  @media(min-width: 700px){
+    @include span-columns(6);
+    width: 47%;
+    }
+}
+
+.skills {
+  h4 {
+    text-align: center;
+    @media(min-width: 350px){
+    @include span-columns(6);
+    margin-right: 0;
+    }
+    @media(min-width: 800px){
+    @include span-columns(3);
+    margin-right: 0;
+    }
+  }
+  margin-bottom: 0;
+}
