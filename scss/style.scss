@@ -17,6 +17,13 @@ body {
   max-width: 1080px;
 }
 
+nav {
+  ul {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
 section {
   @include outer-container;
   background-color: $white;

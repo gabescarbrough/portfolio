@@ -131,6 +131,11 @@ body {
   max-width: 1080px;
 }
 
+nav ul {
+  background-color: #302a5f;
+  color: #fbfdff;
+}
+
 section {
   max-width: 1200px;
   margin-left: auto;
@@ -173,7 +178,7 @@ section:nth-child(odd) {
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .intro {
     padding: 20px;
     background-image: none;
